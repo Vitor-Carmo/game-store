@@ -51,11 +51,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.trasicion{
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(#0D1C31,#000c14)repeat-x;
-}
+
 
 
 
@@ -71,69 +67,13 @@ html {
 	background-repeat: repeat-x;
 }
 
-.porfora{
-  background-color: #0D1C31;
-  padding: 40px;
-}
-.pordentro{
-  background-color: #115280;
-  -webkit-box-shadow: 70px -70px 70px rgba(2, 48, 85, 0.45);
- background: linear-gradient(#115280, #0D1C31)repeat-x;
-}
 
 
-.corzinha{
-  background: linear-gradient(#22394b, #101a243f) repeat-x;
-  margin: 7px 0  ;
- 
-  
-  
-}
-
-
-
-
-.modale{
-  cursor: pointer;
-  
-}
-
-.titulo-jogos{
-
-  margin: 10px 0;
-  color: white;
- 
-}
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
- 
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:end:increment  {
-  display: none;
-}
- 
-::-webkit-scrollbar-track-piece  {
-  background-color: #0D1C31;
-  
-}
- 
-::-webkit-scrollbar-thumb:vertical {
-  background-color: #2E4F7D;
-  -webkit-border-radius: 6px;
-}
 
-::-webkit-scrollbar-thumb:hover{
-  background-color: rgb(62, 105, 165);
-  -webkit-border-radius: 6px;
-  
-  
-}
 
 
 body {
@@ -7378,29 +7318,15 @@ button.bg-dark:focus {
 .mx-0 {
   margin-right:  !important;
 
-  
+ 
 
 .mb-0,
 .my-0 {
     color: #67C1F5;
-  margin: 999999;
-      !important;
-}
-.minhacor{
-    color: #67C1F5;
+    margin: 999999;
+    !important;
 }
 
-.minhacor2 {
-    color: #fff;
-  background: #000C14
-  
-}
-
-.minhacor:hover {
-    color: #3E7494;
-    text-decoration: none
-    
-}
 
 .ml-0,
 .mx-0 {

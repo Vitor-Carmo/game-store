@@ -1,0 +1,153 @@
+/*
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #ffffff;
+  background-color: #115280;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+*/
+
+/*
+.bg-gradient-primary {
+  background: #101c2c linear-gradient(180deg, #101c2c, #115280) repeat-x !important;
+}
+*/
+.minhacor{
+    color: #67C1F5;
+}
+
+.minhacor:hover {
+    color: #3E7494;
+    text-decoration: none
+    
+}
+
+.minhacor2 {
+    color: #fff;
+  background: #000C14
+  
+}
+
+.porfora {
+    background-color: var(--blue-dark);
+    padding: 40px;
+   
+}
+
+.pordentro{
+    background-color: var(--blue-light);
+    -webkit-box-shadow: 70px -70px 70px rgba(2, 48, 85, 0.45);
+   background: linear-gradient(var(--blue-light), var(--blue-dark))repeat-x;
+   border-radius: 8px;
+}
+  
+  
+
+  
+.modale{
+    cursor: pointer;
+    
+}
+  
+.titulo-jogos{
+  
+    margin: 10px 0;
+    color: white;
+   
+}
+
+
+.corzinha{
+    background: linear-gradient(#22394b, #101a243f) repeat-x;
+    margin: 7px 0  ;
+    border-radius: 8px;
+}
+
+
+.corzinha .col-sm img{
+    border-radius: 8px  0  0 8px;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+ 
+
+.btn-default-color {
+    color: #fff;
+    background: var(--blue-dark) linear-gradient(180deg, var(--blue-dark), var(--blue-light)) repeat-x;
+    border-color: var(--blue-dark);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-default-color:hover {
+    color: #fff;
+    background: var(--blue-dark)linear-gradient(180deg, var(--blue-dark), var(--blue-light)) repeat-x;
+    border-color: rgb(27, 63, 112);
+}
+
+.trasicion{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(var(--blue-dark),#000c14)repeat-x;
+}
+
+
+footer .footer-content {
+    background-color: #000C14;
+
+}
+
+
+footer .container .form-register {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+footer .container .form-register h3 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+
+footer .container  form {
+   display: flex;
+   flex-direction: column;
+   color: #67C1F5;
+   margin-bottom: 80px;
+
+}
+
+footer .container  form label {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+footer .container  form .form-check-label{
+
+   font-size: 16px;
+   align-items: center;
+   color: rgb(95, 95, 95);
+}
+
+footer .row {
+    padding-bottom: 50px ;
+}
+
+
+.container footer {
+    color: white;
+}
+
+hr {
+    border: solid 2px var(--blue-light);
+    
+}
