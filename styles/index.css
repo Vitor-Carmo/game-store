@@ -7,11 +7,11 @@
 }
 */
 
-/*
-.bg-gradient-primary {
+
+nav{
   background: #101c2c linear-gradient(180deg, #101c2c, #115280) repeat-x !important;
 }
-*/
+
 .minhacor{
     color: #67C1F5;
 }
@@ -41,9 +41,6 @@
    border-radius: 8px;
 }
   
-  
-
-  
 .modale{
     cursor: pointer;
     
@@ -63,14 +60,42 @@
     border-radius: 8px;
 }
 
+.corzinha .col-sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .corzinha .col-sm img{
+    align-self: flex-start;
     border-radius: 8px  0  0 8px;
     object-fit: cover;
     width: auto;
     height: 100%;
 }
- 
+.corzinha .col-sm h2 {
+    align-self: flex-start;
+}
+
+.corzinha .col-sm .preco  {
+   background-color: var(--blue-dark);
+   width: 215px;
+   padding: 5px 5px 5px 14px;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: white;
+   font-weight: 300;
+}
+
+.corzinha .col-sm .preco button{
+    width: 120px;
+}
+
 
 .btn-default-color {
     color: #fff;
@@ -108,7 +133,7 @@ footer .container .form-register {
 
 footer .container .form-register h3 {
     font-size: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -132,14 +157,13 @@ footer .container  form label {
 }
 
 footer .container  form .form-check-label{
-
    font-size: 16px;
    align-items: center;
    color: rgb(95, 95, 95);
 }
 
 footer .row {
-    padding-bottom: 50px ;
+    padding-bottom: 10px ;
 }
 
 
@@ -149,5 +173,4 @@ footer .row {
 
 hr {
     border: solid 2px var(--blue-light);
-    
 }
