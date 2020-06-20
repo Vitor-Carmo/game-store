@@ -28,4 +28,57 @@
     background-color: rgb(62, 105, 165);
     -webkit-border-radius: 6px;
     
+  }
+
+
+
+img.banner {
+    border-radius: 0;
+}
+
+nav{
+  background: #101c2c linear-gradient(180deg, #101c2c, #115280) repeat-x !important;
+}
+
+.btn-default-color {
+  color: #fff;
+  background: var(--blue-dark) linear-gradient(180deg, var(--blue-dark), var(--blue-light)) repeat-x;
+  border-color: var(--blue-dark);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-default-color:hover {
+  color: #fff;
+  background: var(--blue-dark)linear-gradient(180deg, var(--blue-dark), var(--blue-light)) repeat-x;
+  border-color: rgb(27, 63, 112);
+}
+
+.trasicion{
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(var(--blue-dark),#000c14)repeat-x;
+  margin: 0;
+
+  padding: 0;
+}
+
+footer .footer-content {
+  background-color: #000C14;
+  
+}
+
+
+footer .row {
+  padding-bottom: 10px ;
+}
+
+
+.container footer {
+  color: white;
+}
+
+hr {
+  border: solid 2px var(--blue-light);
+  margin: 0;
+  height: 0;
 }

@@ -1,0 +1,71 @@
+body {
+    background-color: #000C14;
+    height: max-content;
+}
+
+.body{
+    background: linear-gradient(#14639c, var(--blue-dark))repeat-y;
+    padding: 100px 0;
+}
+
+
+.container form.register {
+    margin:0px 250px;
+    background-color: rgba(43, 43, 43, 0.726);
+    padding: 50px;
+    border-radius: 8px;
+    color: white;
+    
+}
+
+.container form.register h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container form.register h3 {
+    font-size: 15px;
+    color: rgb(122, 122, 122);
+    margin-bottom: 20px;
+}
+
+
+.container form.register input {
+    background-color: transparent;
+    border-color: #464646;
+}
+
+.container form.register .action{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    
+}
+
+.container form.register .action button{
+    background-color: #5c7e10;
+    outline: none;
+    color: white;
+   
+
+}
+.container form.register .action .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.container form.register .action .back img {
+    align-self: center;
+    margin-right: 5px;
+
+}
+
+.container form.register .action .back a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
