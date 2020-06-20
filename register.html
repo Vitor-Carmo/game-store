@@ -146,46 +146,47 @@
 
     </nav>
     <div class="body">
-    <div class="container">
-        <form class="register">
-            <h1>INICIAR SESSÃO</h1>
-            <h3>com uma conta na maets existente</h3>
+        <div class="container">
+            <form class="register">
+                <h1>INICIAR SESSÃO</h1>
+                <h3>com uma conta na maets existente</h3>
 
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        required>
 
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required>
-            </div>
-            <div class="action">
-                <button type="submit" class="btn ">Iniciar sessão</button>
-                <div class="back">
-                    <img src="img/back.png" alt="voltar" width="25px"> <a href="index.html">Voltar</a>
                 </div>
-            </div>
-            
-        </form>
-    </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="action">
+                    <button type="submit" class="btn ">Iniciar sessão</button>
+                    <div class="back">
+                        <img src="img/back.png" alt="voltar" width="25px"> <a href="index.html">Voltar</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
 
     </div>
 
 
     <div class="trasicion">
-       
+
     </div>
 
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark">
 
         <div class="footer-content">
-            
+
             <!-- Grid row-->
             <div class="container text-center text-md-left ">
-                <hr >
+                <hr>
                 <!-- Footer -->
                 <footer class="page-footer font-small blue pt-4">
 
@@ -268,6 +269,38 @@
 
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Preencha o formulário
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Endereço de E-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="e-mail@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Digite aqui sua mensagem "></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default-color">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript -->

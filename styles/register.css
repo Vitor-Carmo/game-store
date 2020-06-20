@@ -3,6 +3,10 @@ body {
     height: max-content;
 }
 
+nav .modale{
+    cursor: pointer;
+}
+
 .body{
     background: linear-gradient(#14639c, var(--blue-dark))repeat-y;
     padding: 100px 0;
