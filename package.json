@@ -1,7 +1,6 @@
 {
   "name": "cursobootstrap",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +8,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.0"
-  }
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitor-Carmo/Eletronicos-1-2-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vitor-Carmo/Eletronicos-1-2-3/issues"
+  },
+  "homepage": "https://github.com/Vitor-Carmo/Eletronicos-1-2-3#readme",
+  "description": ""
 }
