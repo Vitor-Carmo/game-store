@@ -52,9 +52,13 @@ nav .modale{
     background-color: #5c7e10;
     outline: none;
     color: white;
-   
-
+    transition: background-color 400ms;
 }
+
+.container form.register .action button:hover{
+    background-color: #618611;
+}
+
 .container form.register .action .back {
     display: flex;
     align-items: center;

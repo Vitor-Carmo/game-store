@@ -1,3 +1,11 @@
+@media (max-width: 1200px) {
+    .container form.register {
+        margin:0px 100px;
+      
+    }
+}
+
+
 @media ( max-width: 991px) {
     .corzinha .col-sm .preco  {
         width: 200px;
