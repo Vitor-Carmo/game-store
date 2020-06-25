@@ -15,7 +15,7 @@
   }
    
   ::-webkit-scrollbar-track-piece  {
-    background-color: #0D1C31;
+    background-color: var( --blue-dark);
     
   }
    

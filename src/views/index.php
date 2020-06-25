@@ -29,7 +29,7 @@
         <!-- O card-img-top fez com que a imagem ficasse grudada no topo 
                 tirando todo o problema do control menos-->
         <div class="login">
-            <a href="register.html">Iniciar sessão</a>
+            <a href="register.php">Iniciar sessão</a>
         </div>
         <img src="../../public/img/banner.jpg" class="banner img-fluid card-img-top" alt="">
 

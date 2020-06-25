@@ -165,7 +165,7 @@
                 <div class="action">
                     <button type="submit" class="btn ">Iniciar sessão</button>
                     <div class="back">
-                        <img src="../../public/img/back.png" alt="voltar" width="25px"> <a href="index.html">Voltar</a>
+                        <img src="../../public/img/back.png" alt="voltar" width="25px"> <a href="index.php">Voltar</a>
                     </div>
                 </div>
 
