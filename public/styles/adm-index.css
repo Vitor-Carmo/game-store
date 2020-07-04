@@ -37,6 +37,7 @@ nav a.nav-link {
     font-size: 18px;
     margin-left: 15px;
     padding-left: 1000  0px;
+    transition: 0.5s
 }
 
 nav a.nav-link:hover{

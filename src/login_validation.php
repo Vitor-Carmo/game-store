@@ -4,7 +4,7 @@
     $perfil = $_POST['perfil'];
 
     switch($perfil){
-        case 1: //Administrador
+        case 1: //Adm
             if (($login == 'adm@adm.com') && ($senha == '123')){
                 session_start();
                 $_SESSION['login-session'] = $login;
@@ -21,7 +21,7 @@
         break;
 
 
-        case 2: //Cliente
+        case 2: //Client
             require_once 'global.php';
             
             $client = new Client();
@@ -40,16 +40,12 @@
                 $_SESSION['login-session'] = $login;
                 $_SESSION['senha-session'] = $senha;
                 $_SESSION['perfil'] = $perfil;
-                //header("Location: area-restrita-cliente/index-area-restrita-cliente.php");
-                echo("Logado com sucesso!");
-
-                session_destroy();
+                header("Location: ../private/client");
 
             }
             else{
                 // back to index register
-                //header("Location: index.php");
-                echo("caso 2: Não achooou!");
+                header("Location: ../register.php?sucess=false");
             }
         break;
     }

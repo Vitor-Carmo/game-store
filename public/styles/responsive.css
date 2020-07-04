@@ -28,6 +28,17 @@
         display: flex;
      }
 
+     nav .reponsive img{
+        width: 40px;
+        padding: 5px;
+        background-color: #0f436894;
+        transition: background-color opacity .8s;
+    }
+
+    nav .reponsive img:hover{
+        background-color: #0f4368;
+    }
+
 
 }
 
@@ -76,6 +87,10 @@
     .container form.register .action .back{
         font-size: 10px;
     }
+
+    .login p {
+        font-size: 10px;
+    }
 }
 
 @media ( max-width: 320px){
@@ -95,6 +110,10 @@
 
     .container form.register .action button{
         margin-bottom: 30px;
+    }
+
+    .login p {
+        font-size: 8px;
     }
 }
 

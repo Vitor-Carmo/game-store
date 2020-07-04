@@ -26,7 +26,7 @@
             echo "
                 <script>  
                     setTimeout(() => {
-                        alert('Login ou senha errado, Tente novamente.')
+                        alert('Login ou senha incorretos, Tente novamente.')
                     }, 500)
                 </script>";
             }
