@@ -33,6 +33,17 @@ nav .modale{
     margin-bottom: 20px;
 }
 
+.container form.register .form-flex{
+    display: flex;
+}
+
+.container form.register select{
+    margin-left: 16px;
+    width: 120px;
+    border:solid 1px #464646;
+    background: none;
+}
+
 
 .container form.register input {
     background-color: transparent;

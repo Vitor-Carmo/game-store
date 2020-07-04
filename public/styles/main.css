@@ -30,14 +30,16 @@
     
   }
 
-
+*{
+  outline: none;
+}
 
 img.banner {
     border-radius: 0;
 }
 
 nav{
-  background: #101c2c linear-gradient(180deg, #101c2c, #115280) repeat-x !important;
+  background: #101c2c linear-gradient(180deg, #101c2c, #115280) repeat-x ;
 }
 
 .btn-default-color {

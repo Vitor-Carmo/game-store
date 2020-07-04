@@ -20,7 +20,19 @@
 
 <body>
 
-
+    <?php
+        if(isset($_GET['sucess'])){
+            if($_GET['sucess'] == 'false'){
+            echo "
+                <script>  
+                    setTimeout(() => {
+                        alert('Login ou senha errado, Tente novamente.')
+                    }, 500)
+                </script>";
+            }
+        }
+        
+    ?>
     <img src="public/img/banner.jpg" class="banner img-fluid card-img-top" alt="">
 
 
@@ -43,6 +55,11 @@
 
                 <ul class="navbar-nav mr-auto">
 
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
                     <li class="nav-item">
 
                     <li class="nav-item dropdown">
@@ -63,24 +80,6 @@
                         </div>
                     </li>
                     </li>
-
-
-                    <li class="nav-item">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" dropdown="toggle" href="#" data-toggle="dropdown" id="navDrop">Software</a>
-
-                        <div class="dropdown-menu">
-
-                            <h6 class="dropdown-header">Softwares</h6>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Animação e Modelagem</a>
-                            <a class="dropdown-item" href="#">Desenvolvimentos de Jogos</a>
-                            <a class="dropdown-item" href="#">Design e ilustração</a>
-
-                        </div>
-                    </li>
-                    </li>
-
 
                     <li class="nav-item">
                     <li class="nav-item dropdown">
@@ -145,22 +144,37 @@
         </div>
 
     </nav>
+
     <div class="body">
         <div class="container">
-            <form class="register">
+
+            
+            <form class="register" action="src/login_validation.php" method="post">
                 <h1>INICIAR SESSÃO</h1>
                 <h3>com uma conta na maets existente</h3>
+
+               
 
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+
+                    <div class="form-flex">
+                        <input type="email" name="txtemail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         required>
 
+                        <select name="perfil" class="form-control" id="exampleFormControlSelect1">
+                            <option value="2">Cliente</option>
+                            <option value="1">Administrador</option>
+                        </select>
+
+                    </div>
                 </div>
+
+
                 <div class="form-group">
                     <label for="exampleInputPassword1">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    <input type="password" name="txtsenha" class="form-control" id="exampleInputPassword1" required>
                 </div>
                 <div class="action">
                     <button type="submit" class="btn ">Iniciar sessão</button>

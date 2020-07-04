@@ -69,6 +69,11 @@
 
                     <ul class="navbar-nav mr-auto">
 
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+
                         <li class="nav-item">
 
                         <li class="nav-item dropdown">
@@ -86,23 +91,6 @@
                                 <a class="dropdown-item" href="#">Multiplayer</a>
                                 <a class="dropdown-item" href="#">RPG</a>
                                 <a class="dropdown-item" href="#">Simulação</a>
-                            </div>
-                        </li>
-                        </li>
-
-
-                        <li class="nav-item">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" dropdown="toggle" href="#" data-toggle="dropdown" id="navDrop">Software</a>
-
-                            <div class="dropdown-menu">
-
-                                <h6 class="dropdown-header">Softwares</h6>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Animação e Modelagem</a>
-                                <a class="dropdown-item" href="#">Desenvolvimentos de Jogos</a>
-                                <a class="dropdown-item" href="#">Design e ilustração</a>
-
                             </div>
                         </li>
                         </li>

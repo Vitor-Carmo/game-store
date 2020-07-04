@@ -63,6 +63,16 @@
       
     }
 
+    .container form.register .form-flex{
+        flex-direction: column;
+       
+    }
+
+    .container form.register select{
+        width: 50%;
+        margin: 20px 0 0;
+    }
+
     .container form.register .action .back{
         font-size: 10px;
     }
@@ -73,6 +83,10 @@
         width: auto;
         flex-direction: column; 
         padding: 5px;
+    }
+
+    .container form.register select{
+        width: auto;
     }
 
     .container form.register .action {

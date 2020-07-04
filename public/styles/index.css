@@ -56,9 +56,9 @@
 
 .pordentro{
     background-color: var(--blue-light);
-    -webkit-box-shadow: 70px -70px 70px rgba(2, 48, 85, 0.45);
-   background: linear-gradient(var(--blue-light), var(--blue-dark))repeat-x;
-   border-radius: 8px;
+    box-shadow: 70px -70px 70px rgba(2, 48, 85, 0.45);
+    background: linear-gradient(var(--blue-light), var(--blue-dark))repeat-x;
+    border-radius: 8px;
 }
   
 .modale{
