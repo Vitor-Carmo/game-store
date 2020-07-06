@@ -2,7 +2,9 @@
   --blue-dark: #0D1C31;
   --blue-light: #115280;
 }
-
+body{
+  background: #000c14;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -36,6 +38,10 @@
 
 img.banner {
     border-radius: 0;
+}
+
+.dropdown-item{
+  cursor: pointer;
 }
 
 nav{

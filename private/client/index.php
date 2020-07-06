@@ -27,25 +27,25 @@
     <body>
         <?php
             include_once("validate.php");
+            require_once("../../src/global.php");
+            
+            require_once('../../functions/client_functions.php');
 
+            $path = '../../';
 
-            require_once('partials/header.php');
+            $client = new Client();
+            $user = $client->getClientData($_SESSION['id'])
+            
         ?>
             <div class="login">
-                <p>
-                    <?php echo($_SESSION['login-session']);?>
+                <p>Bem-vindo(a),
+                    <?php echo($user['nomecliente']);?>!
                 </p>
             </div>
 
         <?php
-            header_client();
+            header_client($path, false);
         ?>        
-
-
-
-  
-
-
 
         <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -88,8 +88,6 @@
         </div>
 
         <div class="porfora">
-
-
             <div class="container pordentro">
 
                 <br>
@@ -103,326 +101,36 @@
                 <br>
 
 
-
-                <!--  ----------------------------------------DEATH STRANDING--------------------------------------------- -->
-                <div class="corzinha">
-
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <img src="../../public/img/death-stranding.jpg" class="img-dentro img-fluid " alt="">
-                        </div>
-                        <div class="col-sm">
-                            <h2 class="titulo-jogos">Death Stranding</h2>
-
-
-                        </div>
-                        <div class="col-sm">
-                            <p class="preco">Carrinho<button type="button" class="btn btn-default-color">R$ 239,00</button></p>
-                        </div>
-                    </div>
-                </div>
-
-     
-
-                <!--  ---------------------------------------- GOD OF WAR --------------------------------------------- -->
-
-
-                <div class="corzinha">
-
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <img src="../../public/img/god-of-war.jpg" class="img-dentro img-fluid " alt="">
-                        </div>
-                        <div class="col-sm">
-                            <h2 class="titulo-jogos">God of War</h2>
-
-
-                        </div>
-                        <div class="col-sm">
-                            <p class="preco">Carrinho<button type="button" class="btn btn-default-color">R$
-                                    77,90</button></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  ---------------------------------------- SKYRIM --------------------------------------------- -->
-
-
-                <div class="corzinha">
-
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <img src="../../public/img/skyrim.jpg" class="img-dentro img-fluid" alt="">
-                        </div>
-                        <div class="col-sm">
-                            <h2 style="margin: 10px 0; color: white; font-size: 20pt">The Elder Scrolls V: Skyrim</h2>
-
-
-
-                        </div>
-                        <div class="col-sm">
-                            <p class="preco">Carrinho<button type="button" class="btn btn-default-color"> R$
-                                    169,90&nbsp;</button></p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!--  ---------------------------------------- Fortnite --------------------------------------------- -->
-
-                <div class="corzinha">
-
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <img src="../../public/img/fortnite.jpg" class="img-dentro img-fluid" alt="">
-                        </div>
-                        <div class="col-sm">
-                            <h2 class="titulo-jogos">Fortnite</h2>
-
-
-                        </div>
-                        <div class="col-sm">
-                            <p class="preco">Carrinho<button type="button" class="btn btn-default-color"> R$
-                                    19,90&nbsp;&nbsp;</button></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  ---------------------------------------- MINECRAFT --------------------------------------------- -->
-
-
-                <div class="corzinha">
-
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <img src="../../public/img/minecraft.jpg" class="img-dentro img-fluid" alt="">
-                        </div>
-                        <div class="col-sm">
-                            <h2 class="titulo-jogos">Minecraft</h2>
-
-
-                        </div>
-                        <div class="col-sm">
-                            <p class="preco">Carrinho<button type="button" class="btn btn-default-color">R$
-                                    149,99&nbsp;</button></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  ---------------------------------------- DOTA 2 --------------------------------------------- -->
-
-
-                <div class="corzinha">
-
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <img src="../../public/img/dota-2.jpg" class="img-dentro img-fluid" alt="">
-                        </div>
-                        <div class="col-sm">
-                            <h2 class="titulo-jogos">Dota 2</h2>
-
-
-
-
-                        </div>
-                        <div class="col-sm">
-                            <p class="preco">Carrinho<button type="button" class="btn btn-default-color"> R$
-                                    9,99&nbsp;&nbsp;&nbsp;</button></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  ---------------------------------------- DIABLO III --------------------------------------------- -->
-
-
-                <div class="corzinha">
-
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <img src="../../public/img/diablo-3.jpg" class="img-dentro img-fluid" alt="">
-                        </div>
-                        <div class="col-sm">
-                            <h2 class="titulo-jogos">Diablo III</h2>
-
-
-
-
-                        </div>
-                        <div class="col-sm">
-                            <p class="preco">Carrinho<button type="button" class="btn btn-default-color"> R$
-                                    49,99&nbsp;</button></p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
+                <?php
+                    $products = new Product();
+                    listProducts($path, $products->list());
+                ?>
 
             </div>
-
         </div>
 
 
         <div class="trasicion"></div>
 
+        <?php
+            footer_client();
 
 
-        <!-- Footer -->
-        <footer class="page-footer font-small unique-color-dark">
-
-            <div class="footer-content">
-                <div class="container">
-
-                    <!-- Grid row-->
-                    <div class="row py-4 d-flex align-items-center">
-
-                        <!-- Grid column -->
-                        <div
-                            class="col-md-12 col-lg-12 text-center text-md-left mb-4 mb-md-0 d-flex align-items-center justify-content-center form-register">         
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid column -->
-                    <hr>
-                </div>
+            contact_modal($user['emailcliente']);
+        ?>
 
 
-
-                <!-- Grid row-->
-                <div class="container text-center text-md-left ">
-
-                    <!-- Footer -->
-                    <footer class="page-footer font-small blue pt-4">
-
-                        <!-- Footer-Links -->
-                        <div class="container-fluid text-center text-md-left">
-
-                            <!-- Grid row -->
-                            <div class="row">
-
-                                <!-- Grid column -->
-                                <div class="col-md-6 mt-md-0 mt-3">
-
-                                    <!-- Content -->
-
-                                    <h5 class="text-uppercase">Contate-nos!</h5>
-                                    <h6>Redes sociais</h6>
-                                    <p>Twitter: <a class="minhacor" href="#!">@MaetsOfficial</a></p>
-                                    <p>Facebook: <a class="minhacor" href="#!">MaetsOfficial</a></p>
-
-                                </div>
-                                <!-- Grid column -->
-
-
-
-                                <!-- Grid column -->
-                                <div class="col-md-3 mb-md-0 mb-3">
-
-                                    <!-- Links -->
-                                    <h5 class="text-uppercase">Informações extras</h5>
-
-                                    <ul class="list-unstyled minhacor">
-                                        <li>
-                                            <a class="minhacor" href="#!">Carreiras</a>
-                                        </li>
-                                        <li>
-                                            <a class="minhacor" href="#!">Anunciantes</a>
-                                        </li>
-                                        <li>
-                                            <a class="minhacor" href="#!">Organizações</a>
-                                        </li>
-                                        <li>
-                                            <a class="minhacor" href="#!">Nossa sede</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <!-- Grid column -->
-
-                                <!-- Grid column -->
-                                <div class="col-md-3 mb-md-0 mb-3">
-
-                                    <!-- Links -->
-                                    <h5 class="text-uppercase"></h5>
-
-                                    <ul class="list-unstyled minhacor">
-                                        <li>
-                                            <a class="minhacor" href="#!">Política de privacidade</a>
-                                        </li>
-                                        <li>
-                                            <a class="minhacor" href="#!">Termos legais</a>
-                                        </li>
-
-                                        <li>
-                                            <a class="minhacor" href="#!">Reembolsos</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <!-- Grid column -->
-
-                            </div>
-                            <!-- Grid row -->
-
-                        </div>
-                        <!-- Footer-Links -->
-                    </footer>
-                </div>
-            </div>
-
-        </footer>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalScrollableTitle">Preencha o formulário
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Endereço de E-mail</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="e-mail@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Mensagem</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="Digite aqui sua mensagem "></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default-color">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
 
         <!-- Optional JavaScript -->
+        
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="../../node_modules/jquery/dist/jquery.js"></script>
-        <script src="../../node_modules/popper.js/dist/umd/popper.js"></script>
-        <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <?php
+            scripts($path);
+        ?>
 
     </body>
 </html>
+
+

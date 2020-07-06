@@ -16,6 +16,7 @@
         margin:0px 0px;
       
     }
+   
 }
 
 @media ( max-width: 767px) {
@@ -90,6 +91,10 @@
 
     .login p {
         font-size: 10px;
+    }
+
+    .body form.register{
+        padding: 35px 10px;
     }
 }
 

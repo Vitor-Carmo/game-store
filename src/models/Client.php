@@ -3,12 +3,16 @@
 class Client{
     private $idClient;
     private $emailClient;
+    private $nameClient;
     private $senhaClient;
 
 
 
     public function getIdClient(){
         return $this->idClient;
+    }
+    public function getNameClient(){
+        return $this->nameClient;
     }
     public function getSenhaClient(){
         return $this->senhaClient;
@@ -18,6 +22,9 @@ class Client{
     }
     public function setIdClient($id){
         $this->idClient = $id;
+    }
+    public function setNameClient($name){
+        $this->nameClient = $name;
     }
     public function setSenhaClient($senha){
         $this->senhaClient = $senha;
@@ -31,8 +38,9 @@ class Client{
     public function register($client){
         $connection = Connection::getConnection();
 
-        $queryInsert = "INSERT INTO tbcliente (senhacliente, emailcliente)
-                        VALUES ('".$client->getSenhaClient()."'
+        $queryInsert = "INSERT INTO tbcliente (nomecliente, senhacliente, emailcliente)
+                        VALUES ('".$client->getNameClient()."'
+                        ,'".$client->getSenhaClient()."'
                         ,'".$client->getEmailClient()."')";
         $connection->exec($queryInsert);
 
@@ -40,12 +48,24 @@ class Client{
         // return $queryInsert;
     }
 
+    public function getClientData($id){
+        $connection = Connection::getConnection();
 
+        $queryInsert = "SELECT * from tbcliente
+        where idcliente = $id";
+
+
+        $stmt = $connection->prepare($queryInsert);
+        $stmt->execute();
+
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+        
+    }
 
     public function list(){
         $connection = Connection::getConnection();
 
-        $querySelect = "select idcliente, senhacliente, emailcliente from tbcliente";
+        $querySelect = "SELECT * FROM tbcliente";
 
         $result = $connection->query($querySelect);
 

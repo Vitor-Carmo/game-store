@@ -11,7 +11,6 @@
 
     <!-- Meus Css -->
     <link rel="stylesheet" href="../../public/styles/main.css">
-    <link rel="stylesheet" href="../../public/styles/adm-index.css">
     <link rel="stylesheet" href="../../public/styles/responsive.css">
 
     <link rel="icon" href="../../public/img/Icone-novo.png">
@@ -32,10 +31,9 @@
         header_adm();
 
 
-        $product = new Product();
-        $queryAll = $product->list();
-        $totalStock = $product->totalStock();
-
+        $client = new Client();
+        $queryAll = $client->list();
+       
     
     ?>
 
@@ -45,9 +43,8 @@
                 <thead>
                     <tr>
                         <th scope="col">id</th>
-                        <th scope="col">Nome produto</th>
-                        <th scope="col">Preço</th>
-                        <th scope="col">Quantidade no estoque</th>
+                        <th scope="col">Nome usuário</th>
+                        <th scope="col">Email</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,10 +52,9 @@
                     foreach($queryAll as $q){
                             echo ("
                             <tr>
-                                <th scope='row'>".$q['idproduto']."</th>
-                                <td>".$q['descproduto']."</td>
-                                <td>".$q['valorproduto']."</td>
-                                <td>".$q['qtdeproduto']."</td>
+                                <th scope='row'>".$q['idcliente']."</th>
+                                <td>".$q['nomecliente']."</td>
+                                <td>".$q['emailcliente']."</td>
                             </tr>
                         ");
                     }
@@ -68,16 +64,7 @@
             </table>
 
 
-            <div class="flex">
-                <div class="stock">
-                    <h1>Total de produtos no estoque</h1>
-                    <h2>
-                        <?php 
-                            echo($totalStock['totalStock']);
-                        ?>
-                    </h2>
-                </div>
-            </div>
+            
 
 
         </div>

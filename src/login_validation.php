@@ -9,7 +9,7 @@
                 session_start();
                 $_SESSION['login-session'] = $login;
                 $_SESSION['senha-session'] = $senha;
-                $_SESSION['perfil'] = $perfil;
+                
 
      
                 header("Location: ../private/adm");
@@ -32,6 +32,8 @@
             foreach ($list as $row){ 
                 if (($login == $row['emailcliente']) && ($senha == $row['senhacliente'])){
                     $find = true;
+                    $id = $row['idcliente'];
+                    break;
                 }
             }
 
@@ -39,7 +41,7 @@
                 session_start();
                 $_SESSION['login-session'] = $login;
                 $_SESSION['senha-session'] = $senha;
-                $_SESSION['perfil'] = $perfil;
+                $_SESSION['id'] = $id;
                 header("Location: ../private/client");
 
             }

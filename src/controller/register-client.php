@@ -1,6 +1,6 @@
 <?php 
 
-require_once'../global.php';
+require_once '../global.php';
 
 try{
    header("Location: ../../index.php?sucess=true");
@@ -11,6 +11,7 @@ try{
  
 
     $client->setSenhaClient($_POST['senha']);
+    $client->setNameClient($_POST['nome']);
     $client->setEmailClient($_POST['email']);
 
 

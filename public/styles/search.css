@@ -1,0 +1,16 @@
+.back {
+    display: flex;
+    margin-top: 50px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.back a{
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.back a h1{
+    font-weight: bold;
+}
