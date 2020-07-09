@@ -1,0 +1,123 @@
+
+body{
+    background-color: #333;
+}
+
+nav{
+    background:#334;
+   
+}
+
+nav .adm-component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .adm-complements{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.8s;
+}
+
+nav .adm-complements:hover{
+    opacity: 1;
+}
+
+
+nav .adm-complements .adm-profile {
+    width: 60px;
+    margin-right: 12px;
+}
+
+
+
+nav .adm-complements p{
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: bold;
+}
+
+
+nav a.nav-link {
+    font-size: 18px;
+    margin-left: 15px;
+    padding-left: 1000  0px;
+    transition: 0.5s
+}
+
+nav a.nav-link:hover{
+    background-color: #67c1f51e;
+
+    border-radius: 8px;
+}
+
+nav a .logout {
+    width: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.8s;
+}
+
+nav a .logout:hover{
+    opacity: 1;
+}
+
+
+.container .body table {
+    margin-top: 60px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.8s;
+}
+
+
+.container .body .table:hover{
+    opacity: 1;
+}
+
+.container .body .flex{
+    margin-top: 50px;
+}
+.container .body .stock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+    color: rgb(226, 226, 226);
+    padding: 30px;
+    border-radius: 8px;
+    border: solid 1px #c5c5c5;
+    width: 35%;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.8s;
+}
+
+.container .body .stock:hover{
+    opacity: 1;
+}
+
+
+.container .body .stock h1{
+    font-size: 24px;
+}
+
+.container .body .stock h2{
+    font-size: 70px;
+    font-weight: bold;
+    
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #334;
+    -webkit-border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track-piece  {
+    background-color: #333;
+    
+  }

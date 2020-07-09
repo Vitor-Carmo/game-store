@@ -16,6 +16,7 @@
         margin:0px 0px;
       
     }
+   
 }
 
 @media ( max-width: 767px) {
@@ -27,6 +28,17 @@
      form .form-check{
         display: flex;
      }
+
+     nav .reponsive img{
+        width: 40px;
+        padding: 5px;
+        background-color: #0f436894;
+        transition: background-color opacity .8s;
+    }
+
+    nav .reponsive img:hover{
+        background-color: #0f4368;
+    }
 
 
 }
@@ -63,8 +75,26 @@
       
     }
 
+    .container form.register .form-flex{
+        flex-direction: column;
+       
+    }
+
+    .container form.register select{
+        width: 50%;
+        margin: 20px 0 0;
+    }
+
     .container form.register .action .back{
         font-size: 10px;
+    }
+
+    .login p {
+        font-size: 10px;
+    }
+
+    .body form.register{
+        padding: 35px 10px;
     }
 }
 
@@ -75,12 +105,20 @@
         padding: 5px;
     }
 
+    .container form.register select{
+        width: auto;
+    }
+
     .container form.register .action {
         flex-direction: column;
     }
 
     .container form.register .action button{
         margin-bottom: 30px;
+    }
+
+    .login p {
+        font-size: 8px;
     }
 }
 

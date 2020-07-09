@@ -2,7 +2,9 @@
   --blue-dark: #0D1C31;
   --blue-light: #115280;
 }
-
+body{
+  background: #000c14;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -15,7 +17,7 @@
   }
    
   ::-webkit-scrollbar-track-piece  {
-    background-color: #0D1C31;
+    background-color: var( --blue-dark);
     
   }
    
@@ -30,14 +32,20 @@
     
   }
 
-
+*{
+  outline: none;
+}
 
 img.banner {
     border-radius: 0;
 }
 
+.dropdown-item{
+  cursor: pointer;
+}
+
 nav{
-  background: #101c2c linear-gradient(180deg, #101c2c, #115280) repeat-x !important;
+  background: #101c2c linear-gradient(180deg, #101c2c, #115280) repeat-x ;
 }
 
 .btn-default-color {
@@ -75,6 +83,138 @@ footer .row {
 
 .container footer {
   color: white;
+}
+
+.corzinha .col-sm img{
+  align-self: flex-start;
+  border-radius: 8px  0  0 8px;
+  object-fit: cover;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.corzinha .col-sm img:hover{
+  width: 303px;
+  opacity: 1;
+  
+}
+
+.porfora {
+  background-color: var(--blue-dark);
+  padding: 40px;
+ 
+}
+
+.pordentro{
+  background-color: var(--blue-light);
+  box-shadow: 70px -70px 70px rgba(2, 48, 85, 0.45);
+  background: linear-gradient(var(--blue-light), var(--blue-dark))repeat-x;
+  border-radius: 8px;
+}
+
+.modale{
+  cursor: pointer;
+  
+}
+
+.minhacor{
+  color: #67C1F5;
+}
+
+.minhacor:hover {
+  color: #3E7494;
+  text-decoration: none
+  
+}
+
+.minhacor2 {
+  color: #fff;
+background: #000C14
+
+}
+
+.titulo-jogos{
+
+  margin: 10px 0;
+  color: white;
+ 
+}
+
+.corzinha{
+  background: linear-gradient(#22394b, #101a243f) repeat-x;
+  margin: 7px 0  ;
+  border-radius: 8px;
+}
+
+.corzinha .col-sm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.corzinha .col-sm h2 {
+  align-self: flex-start;
+}
+
+.corzinha .col-sm .preco  {
+ background-color: var(--blue-dark);
+ width: 215px;
+ padding: 5px 5px 5px 14px;
+ border-radius: 8px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ color: white;
+ font-weight: 300;
+}
+
+.corzinha .col-sm .preco button{
+  width: 120px;
+}
+
+
+footer .container .form-register {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+footer .container .form-register h3 {
+  font-size: 42px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  
+}
+
+
+footer .container  form {
+ display: flex;
+ flex-direction: column;
+ color: #67C1F5;
+ margin-bottom: 80px;
+
+}
+
+footer .container  form label {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+footer .container  form .form-check-label{
+ font-size: 16px;
+ align-items: center;
+ color: rgb(95, 95, 95);
 }
 
 hr {

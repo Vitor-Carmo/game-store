@@ -1,0 +1,49 @@
+.login {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 5px;
+    right: 20px;
+    top: 20px;
+    border-radius: 8px;
+    max-width: 1100px;
+
+}
+
+.login p{   
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+
+}
+
+nav img.logout{
+    width: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+nav .reponsive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav .reponsive img{
+    padding: 2px;
+    opacity: 0.6;
+    border-radius: 8px;
+    transition: opacity .8s;
+}
+
+nav .reponsive img:hover{
+    opacity: 1;
+}
+
+

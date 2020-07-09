@@ -1,0 +1,48 @@
+.container .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+
+.container .body form.register {
+    border-radius: 8px;
+    padding: 35px 80px;
+    
+    max-width: 800px;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+
+
+.container .body form.register h1{
+    font-weight: bold;
+    color: rgb(207, 207, 207);
+}
+
+.container .body form.register h2{
+   color: rgb(94, 94, 94); 
+   font-size: 16px;
+   margin-bottom: 25px;
+}
+
+.container .body form.register label{
+    color: rgb(207, 207, 207);
+    font-size: 16px;
+}
+
+.container .body form.register  input.form-control {
+    background-color: rgba(51, 51, 51, 0);
+    border: solid 1px #333;
+}
+
+.container .body form.register input.form-control-file{
+    color: white;
+}
+
+.container .body form.register button{
+    margin-top: 15px;
+}
