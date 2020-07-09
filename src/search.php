@@ -61,9 +61,15 @@
 
                     if (isset($_GET['search']))
                     {
-
+                        
                         $search = $_GET['search'];
+                        
 
+                        if ($search == ''){
+                            noResult();
+                            
+                        }else{
+                        
                         $productsSearch = $products->searchGenreConsoleProducts($search);
                         
 
@@ -73,21 +79,25 @@
                             listProducts($path, $productsSearch);
                             
                         }
-                        
+                    }
 
                     } else if(isset($_GET['searchgame']))
                     {
-
+                        
                         $searchgame = trim($_GET['searchgame']);
 
-                        $game = $products->searchGame($searchgame);    
+                        if($searchgame != ''){
+                            $game = $products->searchGame($searchgame);    
 
-                        if(sizeof($game) == 0){
-                            noResult();
+                            if(sizeof($game) == 0){
+                                noResult();
+                            }else{
+                                listProducts($path, $game);
+                            }
                         }else{
-                            listProducts($path, $game);
+                            noResult();
                         }
-
+                        
                     } else {
                         noResult();
                     }
@@ -119,7 +129,7 @@
                         ");
 
                     }
-    
+                    
                 ?>
               
             </div>

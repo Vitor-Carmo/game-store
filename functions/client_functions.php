@@ -64,6 +64,7 @@
                             <a class="dropdown-item  search" href="#">Playstation</a>
                             <a class="dropdown-item  search" href="#">Xbox</a>
                             <a class="dropdown-item  search" href="#">Nintendo</a>
+                            <a class="dropdown-item  search" href="#">Mobile</a>
                             <a class="dropdown-item  search" href="#">Pc Gamer</a>
                         </div>
                     </li>
@@ -154,7 +155,7 @@
                     </div>
     
                     <div class='col-sm'>
-                        <p class='preco'>Carrinho<button type='button' class='btn btn-default-color'>R$ ".$product['valorproduto']."</button></p>
+                        <p class='preco'>Carrinho<button type='button' class='btn btn-default-color'>R$ ".number_format($product['valorproduto'], 2, ',', '.')."</button></p>
                     </div>
                 </div>
             </div>

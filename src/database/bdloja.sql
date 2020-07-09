@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 06-Jul-2020 às 22:53
+-- Tempo de geração: 10-Jul-2020 às 01:28
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.2
 
@@ -86,7 +86,12 @@ INSERT INTO `tbproduto` (`idproduto`, `descproduto`, `valorproduto`, `qtdeprodut
 (5, 'Fortnite', 19.99, 74, 'img/product/5.jpg', 'Multiplayer', 'Pc Gamer'),
 (6, 'Minecraft', 149.99, 60, 'img/product/6.jpg', 'Multiplayer', 'Pc Gamer'),
 (7, ' Dota 2', 9.99, 143, 'img/product/7.jpg', 'Multiplayer', 'Pc Gamer'),
-(8, 'Diablo III', 49.99, 56, 'img/product/8.jpg', 'Multiplayer', 'Pc Gamer');
+(8, 'Diablo III', 49.99, 56, 'img/product/8.jpg', 'Multiplayer', 'Pc Gamer'),
+(9, 'Toram online', 7.5, 30, 'img/product/9.jpeg', 'RPG', 'Mobile'),
+(10, 'Free Fire', 5, 28, 'img/product/10.jpeg', 'Multiplayer', 'Mobile'),
+(11, 'Fifa 2019', 269.99, 600, 'img/product/11.jpeg', 'Esportes', 'Xbox'),
+(12, 'A Way Out', 89, 9, 'img/product/12.jpg', 'Aventura', 'Pc Gamer'),
+(13, 'Hollow Knight', 27.99, 100, 'img/product/13.jpeg', 'Aventura', 'Nintendo');
 
 -- --------------------------------------------------------
 
@@ -149,7 +154,7 @@ ALTER TABLE `tbitemvenda`
 -- AUTO_INCREMENT de tabela `tbproduto`
 --
 ALTER TABLE `tbproduto`
-  MODIFY `idproduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idproduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `tbvenda`

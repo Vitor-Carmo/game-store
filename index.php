@@ -143,7 +143,7 @@
                                 CRIE SUA CONTA E JOGUE AGORA MESMO!
                             </h3>
 
-                            <form action="src/controller/register-client.php" method='post'>
+                            <form class="register" action="src/controller/register-client.php" method='post'>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Nome</label>
                                     <input type="text" name="nome" class="form-control" id="exampleInputEmail1"

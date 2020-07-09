@@ -111,3 +111,13 @@ nav a .logout:hover{
     font-weight: bold;
     
 }
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #334;
+    -webkit-border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track-piece  {
+    background-color: #333;
+    
+  }

@@ -85,6 +85,7 @@
                                 <option value="Playstation">Playstation</option>
                                 <option value="Xbox">Xbox</option>
                                 <option value="Nintendo">Nintendo</option>
+                                <option value="Mobile">Mobile</option>
                                 <option value="Pc Gamer">Pc Gamer</option>
                         </select>
                     </div>
