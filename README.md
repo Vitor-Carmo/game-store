@@ -50,7 +50,7 @@ Esse projeto de Programação Web I, estava estático, ou seja,  sem banco de da
 ![Cadastro](readme/register.gif)
 
 ### Registrar Cliente 
-[register-client.php](src\controller\register-client.php)
+[register-client.php](src/controller/register-client.php)
 ```php
  header("Location: ../../index.php?sucess=true");
 
@@ -70,7 +70,7 @@ Esse projeto de Programação Web I, estava estático, ou seja,  sem banco de da
 ![](readme/login.gif)
 
 ### Válidar login
-[login_validation.php](src\login_validation.php)
+[login_validation.php](src/login_validation.php)
 
 ```php
     
@@ -117,7 +117,7 @@ Esse projeto de Programação Web I, estava estático, ou seja,  sem banco de da
 ## Rota do Administrador
 ![](readme/adm.gif)
 ### Válidar login
-[login_validation.php](src\login_validation.php)
+[login_validation.php](src/login_validation.php)
 
 ```php
 // se o email for igual adm@adm.com
@@ -145,7 +145,7 @@ Produto do homem aranha que foi registrado no exemplo:
 ![](readme/spider-man.gif)
 
 ### Registrar jogo
-[register_product.php](src\controller\register-product.php)
+[register_product.php](src/controller/register-product.php)
 
 ```php
 header("Location: ../../private/adm/register_product.php?sucess=true");
@@ -188,7 +188,7 @@ As imagens cadastradas no banco vão estar em [public/img/product](public/img/pr
 ![](readme/search.gif)
 
 ### Código para procurar produto
-[search.php](src\search.php)
+[search.php](src/search.php)
 ```php
 
 // verificar se realmente está setado o searchgame 
@@ -235,7 +235,7 @@ function noResult(){
 ```
 
 ### global.php
-[global.php](src\global.php)
+[global.php](src/global.php)
 
 Esse código serve para dar um `require` em todas as classes modelos.
 
@@ -269,7 +269,7 @@ Essa pasta tem duas subpastas:
  * **adm**: pasta restrita para o admnistrador logado no sistema.
  * **client**: pasta restrita para o cliente logado no sistema.  
 
- Nessa pasta private, há um arquivo chamado [logout.php](private\logout.php), esse arquivo é tanto para o cliente quanto para o administrador sair do sistema logado *( e assim destruindo todas as sessões iniciadas )*.
+ Nessa pasta private, há um arquivo chamado [logout.php](private/logout.php), esse arquivo é tanto para o cliente quanto para o administrador sair do sistema logado *( e assim destruindo todas as sessões iniciadas )*.
 
 
 ### validate.php
@@ -315,7 +315,7 @@ include_once("validate.php");
 ### Pasta models
 
 Nela estão as classes modelos do nosso projeto, e elas são:
-* [Client.php](src\models\Client.php) *( classe modelo do cliente )*
+* [Client.php](src/models/Client.php) *( classe modelo do cliente )*
 
     * **Atributos**:
         * idClient
@@ -328,14 +328,14 @@ Nela estão as classes modelos do nosso projeto, e elas são:
         * getClientData
         * list
 
-* [Connection.php](src\models\Connection.php) *( classe modelo da conexão com o banco de dados )*   
+* [Connection.php](src/models/Connection.php) *( classe modelo da conexão com o banco de dados )*   
 
     * **Atributos**:
         * sem atributos
     * **Métodos**:
         * getConnection
 
-* [Product.php](src\models\Product.php) *( classe modelo do produto )*
+* [Product.php](src/models/Product.php) *( classe modelo do produto )*
 
     * **Atributos**:
         * idProduct
@@ -421,7 +421,7 @@ Agora use o comando
 
 ## Como utilizar o banco de dados do projeto
 
-O arquivo do banco de dados se encontra [aqui](src\database).
+O arquivo do banco de dados se encontra [aqui](src/database).
 
 Para você utilizar o banco de dados do projeto você precisa do [XAMPP](https://www.apachefriends.org/index.html) instalado no seu computador.
 
