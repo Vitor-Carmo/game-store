@@ -140,7 +140,7 @@ if (($login == 'adm@adm.com') && ($senha == '123')){
 ![](readme/register-product.gif)
 
 ### Produto registrado
-Produto do homem aranha qu foi registrado
+Produto do homem aranha que foi registrado no exemplo:
 
 ![](readme/spider-man.gif)
 
@@ -182,7 +182,7 @@ header("Location: ../../private/adm/register_product.php?sucess=true");
     // movendo imagem para "public/img/product/" com o nome do id do produto dela
     move_uploaded_file($product->getPhotoProduct(), "../../public/".$product->getNamePhotoProduct());
 ```
-As imagens cadastradas no banco vão estar em [public/img/product/](public\img\product)
+As imagens cadastradas no banco vão estar em [public/img/product](public/img/product)
  
 ## Procurar Produto
 ![](readme/search.gif)
